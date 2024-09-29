@@ -1,0 +1,154 @@
+*{
+   margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+ 
+  body
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+  }
+
+  img
+  {
+     opacity: 0.75;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100vh;
+     width: 100%;
+
+  }
+  
+  .content
+  {
+     width: 100%;
+     position: absolute;
+     top: 60%;
+     transform: translateY(-50%);
+     text-align: center;
+     color: #665D1E;
+  }
+
+  .title
+  {
+    font-size: 60px;
+    line-height: 100px;
+    font-weight: bold;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+  }
+
+  .slider
+  {
+   color: #F6BE00;
+   margin-left: 12px;
+   box-sizing: border-box;
+   animation: slider 3s linear infinite;
+  }
+
+  @Keyframes slider
+  {
+    0%{ margin-top: -200px;}
+    30%{ margin-top: -200px;}
+    35%{ margin-top: 0px;}
+    65%{ margin-top: 0px;}
+    70%{ margin-top: 200px;}
+    100%{ margin-top: 200px;}
+  }
+
+  .content p
+  {
+   margin: 8px auto;
+   font-weight: 700;
+   line-height: 10px;
+   color: #C04000;
+   font-family: sans-serif;
+  }
+
+  header
+ {
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	padding: 20px 100px;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	z-index: 99;
+ }
+
+ .logo
+ {  
+ 	font-family: Georgia, serif;
+ 	font-size: 2.4em;
+ 	color: #162938;
+ 	user-select: none;
+ }
+
+ .navigation a 
+ {
+ 	position: relative;
+ 	font-size: 1.3em;
+ 	color: #162938;
+ 	text-decoration: none;
+ 	font-weight: 700;
+ 	margin-left: 40px;
+ }
+
+ .navigation a::after
+ {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #162938;
+    border-radius: 5px;
+    transform-origin: right;
+    transform : scaleX(0);
+    transition: transform 0.5s;
+ }
+
+/*.navigation a:hover::after
+{
+	transform-origin: left;
+    transform : scaleX(1);
+
+}*/
+
+ .navigation .btnLogin-popup
+ {
+ 	width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #ffffff;
+    font-weight: 700;
+    margin-left: 40px;
+    transition: 0.5s;
+ }
+
+.navigation .btnLogin-popup:hover
+{
+	background: #ffffff;
+	color: #162938;
+}
+
+

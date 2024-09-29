@@ -1,0 +1,53 @@
+
+header
+{
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 50px;
+ padding: 20px 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 99;
+ background-color: aqua;
+}
+
+.logo
+{  
+ font-family: Georgia, serif;
+ font-size: 2.4em;
+ color: #162938;
+ user-select: none;
+}
+
+.user
+{
+  width: 35px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.row
+ {
+    padding-top: 100px;
+ }
+
+ .cardtitletextcenter h1
+ {
+    
+    color: red;
+ }
+
+ .cardtitletextcenter Address
+ {
+    
+    color: #162938;;
+ }
+
+ .cardtitletextcenter p
+ {
+    
+    color: #162938;;
+ }
